@@ -73,11 +73,11 @@ https://templatemo.com/tm-566-medic-care
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#booking">Ajanvaraus</a>
+                                <a class="nav-link" href="#contact">Ottaa yhteyttä</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">Ottaa yhteyttä</a>
+                                <a class="nav-link" href="#booking">Ajanvaraus</a>
                             </li>
                         </ul>
                     </div>
@@ -102,6 +102,10 @@ https://templatemo.com/tm-566-medic-care
 
                                     <div class="carousel-item">
                                         <img src="images/slider/doctor-s-hand-holding-stethoscope-closeup.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="images/slider/doctor (1).jpg" class="img-fluid" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +140,7 @@ https://templatemo.com/tm-566-medic-care
                     <div class="rivi">
 
                         <div class="col-lg-6 col-md-6 col-12">
-                            <h2 class="mb-lg-3 mb-3">tervetuloa</h2>
+                            <h2 class="top-right">tervetuloa</h2>
 
                             <p>Hei! Olen Kaja ja olen erikoislääkäri. Talla hetkella työskentelen terveystalolla. Voit varata ajan minulle sähkösesti terveystalon nettisivulta. </p>
 
@@ -163,6 +167,8 @@ https://templatemo.com/tm-566-medic-care
 
                         <div class="col-lg-6 col-6 pe-0">
                             <img src="images/gallery/female-doctor-with-presenting-hand-gesture.jpg" class="img-fluid galleryImage" alt="wear a mask" title="wear a mask to protect yourself">
+
+                            
                         </div>
 
                     </div>
@@ -291,31 +297,31 @@ https://templatemo.com/tm-566-medic-care
                                 
                                 <h2 class="text-center mb-lg-3 mb-2">Varata aika</h2>
                             
-                                <form role="lomake" action="#varaus" method="lähettä">
+                                <form role="form" action="#booking" method="post">
                                     <div class="row">
                                         <div class="col-lg-6 col-12">
-                                            <input kirjoittaa="teksti" nimi="nimi" id="nimi" class="muodonhallinta" placeholder="Kokonimi" required>
+                                            <input type="teksti" name="nimi" id="nimi" class="form-control" placeholder="Kokonimi" required>
                                         </div>
 
                                         <div class="col-lg-6 col-12">
-                                            <input Kirjoittaa="Sähköposti" name="Sähköposti" id="Sähköposti" pattern="[^ @]*@[^ @]*" class="muodonhallinta" placeholder="Sähköposti" required>
+                                            <input type="Sähköposti" name="Sähköposti" id="Sähköposti" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Sähköposti" required>
                                         </div>
 
                                         <div class="col-lg-6 col-12">
-                                            <input Kirjoittaa="bi-puhelinnumero" name="bi-puhelinnumero" id="bi-puhelinnumero" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="muodonhallinta" placeholder="Phone: 123-456-7890">
+                                            <input type="Puhelin" name="Puhelin" id="Puhelin" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="Puhelin: 123-456-7890">
                                         </div>
 
                                         <div class="col-lg-6 col-12">
-                                            <input Kirjoittaa="Päivämäärä" nimi="Päivämäärä" id="Päivämäärä" value="" class="muodonhallinta">
+                                            <input type="Date" name="date" id="date" value="" class="form-control">
                                             
                                         </div>
 
                                         <div class="col-12">
-                                            <textarea class="muodonhallinta" rows="5" id="Viesti" name="Viesti" placeholder="Lisätiedot"></textarea>
+                                            <textarea class="form-control" rows="5" id="Viesti" name="viesti" placeholder="Lisätiedot"></textarea>
                                         </div>
 
                                         <div class="col-lg-3 col-md-4 col-6 mx-auto">
-                                            <button Kirjoittaa="Lähetä" class="muodonhallinta" id="lähetä-painiketta">Varaa</button>
+                                            <button type="submit" class="form-control" id="submit-button">Varaa</button>
                                         </div>
                                     </div>
                                 </form>
@@ -338,10 +344,6 @@ https://templatemo.com/tm-566-medic-care
 
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item d-flex">
-                                sunnuntai : suljettu
-                            </li>
-
-                            <li class="list-group-item d-flex">
                                 Maanantai, tiistai - perjantai
                                 <span>8:00 AM - 3:30 PM</span>
                             </li>
@@ -350,33 +352,37 @@ https://templatemo.com/tm-566-medic-care
                                 Lauantai
                                 <span>10:30 AM - 5:30 PM</span>
                             </li>
+
+                            <li class="list-group-item d-flex">
+                                sunnuntai : suljettu
+                            </li>
                         </ul>
-                    </div>
 
-                    <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0">
-                        <h5 class="mb-lg-4 mb-3">meidän klinikkamme</h5>
+                        <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0">
+                            <h5 class="mb-lg-4 mb-3">meidän klinikkamme</h5>
+                            
+                            <ul class="social-icon">
+                                <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+    
+                                <li><a href="#" class="social-icon-link bi-twitter"></a></li>
+    
+                                <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+    
+                                <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                            </ul>
+                            
+                        </div>
 
-                        <p><a href="mailto:hello@company.co">hello@company.co</a><p>
-
-                        <p>123 Digital Art Street, San Diego, CA 92123</p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 ms-auto">
                         <h5 class="mb-lg-4 mb-3">Sosiaalit</h5>
 
-                        <ul class="social-icon">
-                            <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+                        <p><a href="mailto:hello@company.co">hello@company.co</a><p>
 
-                            <li><a href="#" class="social-icon-link bi-twitter"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0">
-                        <p class="copyright-text">Copyright © Medic Care 2021 
+                        <p>Pasilan Asema-aukio 1 C 5. krs, 00520 Helsinki</p>
+                    <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0"></div>
+                        <p><a href="copyright-text">Copyright © Medic Care 2021 
                         <br><br>Malli: <a href="https://templatemo.com" target="_parent">malleja/a></p>
                     </div>
 
